@@ -20,9 +20,9 @@ from langchain.schema import (
     SystemMessage
 )
 import os
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["SERPAPI_API_KEY"] = "f02a5a96c8a6199fd82889ddec34f2edc56d464e842a28d3fa4f9f1997bc3f54"
-chat = ChatOpenAI(openai_api_key="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")
+os.environ["OPENAI_API_KEY"] = "yourOpenAIAPI"
+os.environ["SERPAPI_API_KEY"] = "YourSERPAPIKey"
+chat = ChatOpenAI(openai_api_key="yourOpenAIAPI")
 
 llm = OpenAI(temperature=0)
 app = Flask(__name__)
